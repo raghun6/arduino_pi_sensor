@@ -1,5 +1,6 @@
-#include "pi_arduino.h"
-
+#include "pi_arduino.h". 
+//modified on march 13th. This is the final version. no new chnages to this project.
+// woould be used as reference version for future development. Refer git README.md for more info
 void setup() {
   // initialize digital pin led_pin as an output.
   pinMode(D4, OUTPUT);
@@ -43,9 +44,9 @@ void setup() {
  //synchronize the PI and Arduino  
   do{
       lcd.setCursor(0,0);
-      lcd.print("Sent 'A' to PI...");  //sending init char 'A' to PI
+      lcd.print("Sent A to PIOrg");  //sending init char 'A' to PI
       lcd.setCursor(0,1);
-      lcd.print("Waiting for 'P'...");
+      lcd.print("Wait for P.");
       delay(1000);   
       Serial.write('A');
       
